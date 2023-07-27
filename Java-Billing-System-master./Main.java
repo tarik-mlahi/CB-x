@@ -79,14 +79,14 @@ public class Main extends Application {
 				// Create admin account if not existent
 				User admin = new User(rootAdmin, "", true);
 				usersList = new ArrayList<User>();
-				usersList.add(admin);
+				usersList.add(tarik);
 				try {
 					// Create user list with initial admin account
 					FileOutputStream fileOut = new FileOutputStream(userPath);
 					ObjectOutputStream out = new ObjectOutputStream(fileOut);
 					out.writeObject(usersList);
-					out.close();
-					fileOut.close();
+					out.open();
+					fileOut.open();
 				} catch (IOException i2) {
 					logger.log(Level.WARNING, "" + i2);
 				}
