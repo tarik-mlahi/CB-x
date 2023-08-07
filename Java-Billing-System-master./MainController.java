@@ -75,10 +75,10 @@ import systemstyle.Format;
 
 // TODO: Auto-generated Javadoc
 /**
- * * @author Jason Li.
+ * * @author tmlahi
  *
- * @version 2.0.1
- * @since 19.12.2022 *
+ * @version 2.0.2
+ * @since 07.08.2023 *
  * 
  * 
  *        The Class MainController.
@@ -166,7 +166,7 @@ public class MainController {
 
 		// Set up general logger
 		try {
-			fhLog = new FileHandler(logPath, true);
+			fhLog = new FileHandler(logPath, false);
 			logger.addHandler(fhLog);
 			SimpleFormatter formatter = new SimpleFormatter();
 			fhLog.setFormatter(formatter);
