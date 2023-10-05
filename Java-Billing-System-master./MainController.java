@@ -77,7 +77,7 @@ import systemstyle.Format;
 /**
  * * @author tmlahi
  *
- * @version 2.0.2
+ * @version 2.0.3
  * @since 07.08.2023 *
  * 
  * 
